@@ -58,7 +58,7 @@ namespace lab_9
         }
 
         public static bool operator ==(ComplexNumber n1, ComplexNumber n2)
-        {
+        {            
             if (n1.number == n2.number && n1.complexNumber == n2.complexNumber)
             {
                 return true;
@@ -115,5 +115,22 @@ namespace lab_9
             return res.number;
         }
 
+        public override bool Equals(object obj)
+        {            
+            if((obj == null) || !this.GetType().Equals(obj.GetType()))
+            {
+                return false;
+            }
+            else
+            {
+                ComplexNumber cur = (ComplexNumber) obj;
+                return this == cur;
+            }
+        }
+
+        public override int GetHashCode()
+        {
+            return base.GetHashCode();
+        }
     }
 }

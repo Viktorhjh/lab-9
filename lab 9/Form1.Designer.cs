@@ -41,6 +41,9 @@ namespace lab_9
             this.textBox4 = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
             this.button2 = new System.Windows.Forms.Button();
+            this.button3 = new System.Windows.Forms.Button();
+            this.button4 = new System.Windows.Forms.Button();
+            this.comboBox2 = new System.Windows.Forms.ComboBox();
             this.SuspendLayout();
             // 
             // button1
@@ -117,7 +120,7 @@ namespace lab_9
             | System.Windows.Forms.AnchorStyles.Right)));
             this.result.AutoSize = true;
             this.result.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.result.Location = new System.Drawing.Point(260, 120);
+            this.result.Location = new System.Drawing.Point(257, 78);
             this.result.Name = "result";
             this.result.Size = new System.Drawing.Size(0, 39);
             this.result.TabIndex = 6;
@@ -162,18 +165,58 @@ namespace lab_9
             // button2
             // 
             this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.button2.Location = new System.Drawing.Point(151, 230);
+            this.button2.Location = new System.Drawing.Point(148, 230);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(130, 31);
             this.button2.TabIndex = 11;
             this.button2.Text = "Convert";
             this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
+            // 
+            // button3
+            // 
+            this.button3.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.button3.Location = new System.Drawing.Point(480, 230);
+            this.button3.Name = "button3";
+            this.button3.Size = new System.Drawing.Size(130, 31);
+            this.button3.TabIndex = 12;
+            this.button3.Text = "GetHashCode";
+            this.button3.UseVisualStyleBackColor = true;
+            this.button3.Click += new System.EventHandler(this.button3_Click);
+            // 
+            // button4
+            // 
+            this.button4.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.button4.Location = new System.Drawing.Point(342, 230);
+            this.button4.Name = "button4";
+            this.button4.Size = new System.Drawing.Size(130, 31);
+            this.button4.TabIndex = 13;
+            this.button4.Text = "Equals";
+            this.button4.UseVisualStyleBackColor = true;
+            this.button4.Click += new System.EventHandler(this.button4_Click);
+            // 
+            // comboBox2
+            // 
+            this.comboBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.comboBox2.FormattingEnabled = true;
+            this.comboBox2.Items.AddRange(new object[] {
+            "To double",
+            "To complex number"});
+            this.comboBox2.Location = new System.Drawing.Point(12, 196);
+            this.comboBox2.Name = "comboBox2";
+            this.comboBox2.Size = new System.Drawing.Size(266, 28);
+            this.comboBox2.TabIndex = 14;
+            this.comboBox2.Text = "Choose";
+            this.comboBox2.SelectedIndexChanged += new System.EventHandler(this.comboBox2_SelectedIndexChanged);
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(632, 273);
+            this.Controls.Add(this.comboBox2);
+            this.Controls.Add(this.button4);
+            this.Controls.Add(this.button3);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.textBox3);
@@ -208,6 +251,9 @@ namespace lab_9
         private System.Windows.Forms.TextBox textBox4;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button button3;
+        private System.Windows.Forms.Button button4;
+        private System.Windows.Forms.ComboBox comboBox2;
     }
 }
 
